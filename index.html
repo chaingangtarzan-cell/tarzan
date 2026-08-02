@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background:black;
+color:#00ff00;
+font-family:monospace;
+text-align:center;
+padding-top:50px;
+}
+</style>
+</head>
 
+<body>
+
+<h1>⚠️ SYSTEM ALERT ⚠️</h1>
+<p id="screen">Starting...</p>
+
+<script>
+let text = [
+"Scanning device...",
+"Checking security...",
+"Loading files...",
+"Installing Tarzan.exe...",
+""
+];
+
+let i = 0;
+
+setInterval(function(){
+ if(i < text.length){
+  document.getElementById("screen").innerHTML=text[i];
+  i++;
+ } else {
+  document.getElementById("screen").innerHTML=
+  "😂 YOU GOT PRANKED<br><br>HACKED BY TARZAN 🐒";
+ }
+},1500);
+</script>
+
+</body>
+</html>
